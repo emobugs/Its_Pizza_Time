@@ -24,6 +24,55 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10rem;
+  .card {
+    padding: 30px 60px;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    margin: 20px;
+    text-align: center;
+    .emoji {
+      font-size: 10em;
+    }
+    .type {
+      padding: 5px 20px 10px;
+      display: block;
+      border-radius: 30px;
+      background: #0000000d;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+    &.is-danger {
+      background-color: #ff6060;
+      .type {
+        color: white;
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.notifications {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
   flex-flow: column;
+  .notification-container {
+    width: 50%;
+    .notification {
+      background-color: white;
+      box-shadow: 0 3px 10px #0000000f;
+      margin: 5px 0;
+      &.is-danger {
+        background-color: #ff6060;
+        .type {
+          color: white;
+        }
+      }
+    }
+  }
 }
