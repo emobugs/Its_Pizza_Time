@@ -18,7 +18,7 @@ export default class Notification {
   render({type, price}) 
   {
     const template = `
-<div class="notification type-${type}" ${classNames({
+<div class="notification type-${type} ${classNames({
   "is-danger" : type === Notification.types.HAWAIIAN,
 })}">
   <button class="delete"></button>
