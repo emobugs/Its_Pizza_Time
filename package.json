@@ -67,6 +67,7 @@
   },
   "target": "web",
   "dependencies": {
+    "classnames": "^2.3.1",
     "eventemitter3": "^4.0.7"
   }
 }
